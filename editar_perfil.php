@@ -52,7 +52,7 @@ Erro: Necessário Preencher Todos os Campos!</div>
    </div></div>
 </div>";
             } 
-    //exibindo msg caso o email já exista
+   
     if($result_usuario->rowCount() >= 0 && (filter_var($dados['usuario'], FILTER_VALIDATE_EMAIL)) && strlen($dados['senha_usuario'])>=6){
  $texto = "<input type='checkbox' id='toggle-1'>
 <div id='mostra'>
@@ -66,7 +66,7 @@ Erro: Usuário Já Existe!</div>
 <div class='er'>:(</div>
    </div></div>
 </div>";}
-//verificando se o email é válido 
+
     if (!filter_var($dados['usuario'], FILTER_VALIDATE_EMAIL) && !$empty_input){
     $empty_input = true;
      $texto = "<input type='checkbox' id='toggle-1'>
@@ -81,7 +81,7 @@ Erro: Email Inválido!</div>
 <div class='er'>:(</div>
    </div></div>
 </div>";}
-   //exibindo msg caso a senha seja menor q 6 caracteres
+   
    if (strlen($dados['senha_usuario']) < 6 && !$empty_input){
      $texto = "<input type='checkbox' id='toggle-1'>
 <div id='mostra'>
@@ -97,7 +97,7 @@ Erro: Senha Deve Ter Pelo Menos 6 Caracteres!</div>
 </div>";}
     
    
-      //realizando cadastro caso os campos n estejam vazios, o email seja válido, a senha tenha mais de 6 caracteres e o email ainda n exista no bd
+     
          if (!$empty_input && ($result_usuario->rowCount() <= 0) && (filter_var($dados['usuario'], FILTER_VALIDATE_EMAIL)) && strlen($dados['senha_usuario']) >= 6){
         $query_cad = "UPDATE usuarios
 SET nome=:nome, usuario=:usuario, cidade=:cidade, senha_usuario=:senha_usuario WHERE id=$idvar";
