@@ -17,9 +17,8 @@ Requisitos:
 | Login               | Implementado       | login.php                              |
 | Editar Perfil       | Implementado       | editar_perfil.php                      |
 | Deletar Conta       | Não Implementado   |                                        |
-| Sugestão (Rotas.    | Implementado       | cadastro_rota.php,                     |
-| Locais, Eventos)    |                    | cadastro_evento.php, cadastro_local.php|
+| Sugestão (Rotas. Locais, Eventos)   | Implementado       | cadastro_rota.php, cadastro_evento.php, cadastro_local.php |                    
 | Eventos             | Implementado       | eventos.html                           |
-| Remover Eventos     | Não Implementado   |
+| Remover Eventos     | Não Implementado   |                                        |
 
 
