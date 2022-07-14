@@ -5,7 +5,7 @@ Link: http://mapa3878.rf.gd/dashboard.php (Necessário utilizar visualização M
 
 Hospedagem Rodando Php 7.4, MySQL 5.7
 
-Obs: para rodar essa aplcação localmente é necessário a utilização de um programa para a criação de um servidor local , como o XAMPP, também é necessário importar o arquivo "usuario.sql" para o banco de dados, para a criação das tabelas necessárias, e modificar o arquivo "conexao.php" com as credencias corretas, para o acesso ao banco de dados MySQL.
+Obs: para rodar essa aplcação localmente é necessário a utilização de um programa para a criação de um servidor local , como o XAMPP, também é necessário importar o arquivo "usuario.sql" para o banco de dados, para a criação das tabelas necessárias, e modificar o arquivo "conexao.php" com as credenciais corretas, para o acesso ao banco de dados MySQL.
 
 Requisitos:
 | Requisitos          | Estado             |Código                                  |
