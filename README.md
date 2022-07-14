@@ -1,4 +1,4 @@
-# Projeto-Mugiwaras
+# Projeto Mugiwaras
 Mapa de pontos de coleta de resíduos eletrônicos da cidade de Crateús, criado pela equipe Mugiwaras, como parte da disciplina de Projeto Integrado 1
 
 Link: http://mapa3878.rf.gd/dashboard.php
@@ -7,7 +7,7 @@ Obs: para rodar essa aplcação localmente é necessário a utilização de um p
 
 Requisitos:
 | Requisitos          | Estado             |Código                                  |
-| --------------------|:------------------:|----------------------------------------|
+| --------------------|--------------------|----------------------------------------|
 | Mapa                | Implementado       | map.js, mapa.html                      |
 | Filtrar (Mapa)      | Implementado       | map.js, mapa.html                      |
 | Marcadores          | Implementado       | map.js, mapa.html                      |
