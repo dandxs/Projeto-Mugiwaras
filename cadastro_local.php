@@ -21,7 +21,7 @@ include_once 'conexao.php';
     <?php
     $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
     $texto ="";
-    //verificando se usuário (email) já existe no bd
+    
     if (!empty($dados['SendCad'])) {
     $empty_input = false;
     $query_usuario = "SELECT nome
@@ -47,7 +47,7 @@ Erro: Necessário Preencher Todos os Campos!</div>
    </div></div>
 </div>";
             } 
-    //exibindo msg caso o email já exista
+ 
     if($result_usuario->rowCount() >= 0 && $empty_input==false){
  $texto = "<input type='checkbox' id='toggle-1'>
 <div id='mostra'>
@@ -63,7 +63,7 @@ Erro: Local Já Existe!</div>
 </div>";}
 
    
-      //realizando cadastro caso os campos n estejam vazios, o email seja válido, a senha tenha mais de 6 caracteres e o email ainda n exista no bd
+      
          if (!$empty_input && ($result_usuario->rowCount() <= 0)){
         $query_cad = "INSERT INTO locais (nome, cnpj, bairro, rua, cep) VALUES (:nome, :cnpj, :bairro, :rua, :cep) ";
         $result_cad = $conn->prepare($query_cad);
