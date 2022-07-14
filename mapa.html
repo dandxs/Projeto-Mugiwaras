@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <title>Mapa</title>
+	 <meta charset="UTF-8"/>
+	 	 <link rel="stylesheet" href="leaflet-search.css" type="text/css"/>
+	 <link rel="stylesheet" href="styles2.css" type="text/css"/>
+	      
+
+	 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	 	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+
+   
+   	 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+   
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+
+<script src="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.src.js"></script>
+
+   <script src="https://kit.fontawesome.com/0e5dd61345.js" crossorigin="anonymous"></script>
+   
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ </head>
+	 <body>
+ <header>
+  <a class="arrow" href="dashboard.php">&larr;</a>
+ <div class="flex-row">
+ <div class="example"><div id="jpt"></div></div>
+<input type="checkbox" id="toggle-1">
+ <label class="bx" for="toggle-1">
+	 <div class="ponto">.</div>
+	 <div class="ponto">.</div>
+	 <div class="ponto">.</div></label>
+	 <div class="espaco"><br></div>
+<div id="mostra-menu">
+  <div class="menu-fundo">
+  <label for="toggle-1">
+  <div class="botao5">&times;</div>
+</label>
+  <div class="menu-text">Menu</div>
+
+   <input type="checkbox" id="toggle-2">
+  <label class="menu-itens" for="toggle-2">Filtrar:<div class="menor">&#9660;</div></label>
+  <div class="fil">
+  
+  <label class="container" for="toggle-3">Tudo<input type="checkbox" id="toggle-3" name="it1" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container" for="toggle-4">Baterias<input type="checkbox" id="toggle-4" name="it2" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container" for="toggle-5">Lâmpadas<input type="checkbox" id="toggle-5" name="it3" checked="checked">
+  <span class="checkmark"></span>
+</label>
+</div>
+ 
+  <input type="checkbox" id="toggle-6">
+  <label class="menu-itens" for="toggle-6">Rotas:<div class="menor">&#9660;</div></label>
+  <div class="fila">
+ 
+ 
+ <label class="container" for="toggle-7">Rota 1
+  <input type="checkbox" id="toggle-7" name="it4">
+  <span class="checkmark"></span>
+</label>
+ </div>
+  
+  
+  </div>
+   </div>
+</div></div>
+    </header>
+    <br>
+<div id ="map"></div>
+          <script src="map.js"></script>
+      
+</body>
+ </html>
